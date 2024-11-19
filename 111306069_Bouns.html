@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonus Homework</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            font-size: 18px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #333;
+            font-size: 20px;
+        }
+
+        .form-container {
+            width: 80%; 
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #fff;
+            padding: 30px; 
+            border-radius: 10px; 
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+        }
+
+        .form-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px; 
+        }
+
+        label {
+            flex: 1;
+            font-size: 18px; 
+            font-weight: bold;
+            color: #555;
+        }
+
+        input, textarea {
+            flex: 2;
+            padding: 12px 14px;
+            font-size: 16px; 
+            border: 1px solid #ddd;
+            border-radius: 8px; 
+            box-sizing: border-box;
+        }
+
+        input::placeholder, textarea::placeholder {
+            color: #aaa;
+            font-style: italic;
+        }
+        #input2, #input3 {
+            width: 30%; /* 設置寬度為容器的 48% */
+            margin-right: 2%;
+        }
+
+        .input-inline {
+            margin-left: 10px;
+            flex: none;
+        }
+
+        textarea {
+            width: 100%;
+            resize: none;
+        }
+
+        .image-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .form-image {
+            width: 100%; 
+            max-width: 600px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <h1>Bonus HW</h1>
+    <form class="form-container">
+        <!-- Input fields -->
+        <div class="form-row">
+            <label for="input1">input1</label>
+            <input type="text" id="input1" placeholder="input1">
+        </div>
+        <div class="form-row">
+            <label for="input2">input2</label>
+            <input type="text" id="input2" placeholder="input2">
+            <label for="input3" class="input-inline">input3</label>
+            <input type="text" id="input3" placeholder="input3" class="input-inline">
+        </div>
+        <div class="form-row">
+            <label for="input4">input4</label>
+            <input type="text" id="input4" placeholder="input4">
+        </div>
+        <!-- Textarea -->
+        <div class="form-row">
+            <label for="textarea">textarea</label>
+            <textarea id="textarea" rows="3" cols="30" placeholder="Write your message here"></textarea>
+        </div>
+        <!-- Image -->
+        <div class="form-row">
+            <label for="image">picture1</label>
+            <img src="圖.jpg" alt="Inspirational Picture" class="form-image">
+        </div>
+    </form>
+</body>
+</html>
